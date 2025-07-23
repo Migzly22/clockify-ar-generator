@@ -23,7 +23,10 @@
 <script lang="ts" setup>
     import { CalendarDate, DateFormatter, getLocalTimeZone } from '@internationalized/date'
     const df = new DateFormatter('en-US', { dateStyle: 'medium'})
-    const dateValue = defineModel<any>('dateValue')
+    const dateValue = defineModel<any>('dateValue', {default : {
+        start: new CalendarDate(2022, 1, 20),
+        end: new CalendarDate(2022, 2, 10)
+    }})
     // const rangeValue = shallowRef({
     //     start: new CalendarDate(2022, 1, 20),
     //     end: new CalendarDate(2022, 2, 10)

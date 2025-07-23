@@ -1,13 +1,12 @@
-@import "tailwindcss" theme(static);
+@import "tailwindcss";
 @import "@nuxt/ui";
 
-
 @theme static {
-  /* --font-sans: 'Public Sans', sans-serif; */
+  --font-sans: 'Public Sans', sans-serif;
 
   --breakpoint-3xl: 1920px;
 
-  /* --color-green-50: #EFFDF5;
+  --color-green-50: #EFFDF5;
   --color-green-100: #D9FBE8;
   --color-green-200: #B3F5D1;
   --color-green-300: #75EDAE;
@@ -17,11 +16,9 @@
   --color-green-700: #007F45;
   --color-green-800: #016538;
   --color-green-900: #0A5331;
-  --color-green-950: #052E16; */
-
-  --color-primary: #7F56D9;
-  /* --color-secondary: #ABB2BF; */
+  --color-green-950: #052E16;
 }
+
 
 body{
     @apply p-0 m-0;
